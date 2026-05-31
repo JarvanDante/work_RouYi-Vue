@@ -1,0 +1,66 @@
+21:26:13.339 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,18] - HV000001: Hibernate Validator 9.0.1.Final
+21:26:13.360 [restartedMain] INFO  c.r.RuoYiApplication - [logStarting,54] - Starting RuoYiApplication using Java 21.0.10 with PID 13410 (/Users/wangdante/D/kugou/work/RuoYi-Vue/ruoyi-admin/target/classes started by wangdante in /Users/wangdante/D/kugou/work/RuoYi-Vue)
+21:26:13.361 [restartedMain] INFO  c.r.RuoYiApplication - [logStartupProfileInfo,658] - The following 1 profile is active: "druid"
+21:26:14.560 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Initializing ProtocolHandler ["http-nio-8080"]
+21:26:14.561 [restartedMain] INFO  o.a.c.c.StandardService - [log,168] - Starting service [Tomcat]
+21:26:14.561 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,168] - Starting Servlet engine: [Apache Tomcat/11.0.18]
+21:26:15.257 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,865] - {dataSource-1} inited
+21:26:15.259 [Druid-ConnectionPool-Create-1065174281] INFO  c.a.d.p.DruidAbstractDataSource - [setFailContinuous,1908] - {dataSource-1} failContinuous is true
+21:26:15.266 [restartedMain] INFO  o.a.c.c.StandardService - [log,168] - Stopping service [Tomcat]
+21:34:00.256 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,18] - HV000001: Hibernate Validator 9.0.1.Final
+21:34:00.290 [restartedMain] INFO  c.r.RuoYiApplication - [logStarting,54] - Starting RuoYiApplication using Java 21.0.10 with PID 13972 (/Users/wangdante/D/kugou/work/RuoYi-Vue/ruoyi-admin/target/classes started by wangdante in /Users/wangdante/D/kugou/work/RuoYi-Vue)
+21:34:00.291 [restartedMain] INFO  c.r.RuoYiApplication - [logStartupProfileInfo,658] - The following 1 profile is active: "druid"
+21:34:01.651 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Initializing ProtocolHandler ["http-nio-8080"]
+21:34:01.652 [restartedMain] INFO  o.a.c.c.StandardService - [log,168] - Starting service [Tomcat]
+21:34:01.652 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,168] - Starting Servlet engine: [Apache Tomcat/11.0.18]
+21:34:02.754 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,865] - {dataSource-1} inited
+21:34:02.761 [restartedMain] INFO  o.a.c.c.StandardService - [log,168] - Stopping service [Tomcat]
+21:34:02.777 [Druid-ConnectionPool-Create-487403272] INFO  c.a.d.p.DruidAbstractDataSource - [setFailContinuous,1908] - {dataSource-1} failContinuous is true
+21:35:02.604 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,18] - HV000001: Hibernate Validator 9.0.1.Final
+21:35:02.627 [restartedMain] INFO  c.r.RuoYiApplication - [logStarting,54] - Starting RuoYiApplication using Java 21.0.10 with PID 14063 (/Users/wangdante/D/kugou/work/RuoYi-Vue/ruoyi-admin/target/classes started by wangdante in /Users/wangdante/D/kugou/work/RuoYi-Vue)
+21:35:02.627 [restartedMain] INFO  c.r.RuoYiApplication - [logStartupProfileInfo,658] - The following 1 profile is active: "druid"
+21:35:03.807 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Initializing ProtocolHandler ["http-nio-8080"]
+21:35:03.808 [restartedMain] INFO  o.a.c.c.StandardService - [log,168] - Starting service [Tomcat]
+21:35:03.808 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,168] - Starting Servlet engine: [Apache Tomcat/11.0.18]
+21:35:04.913 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,865] - {dataSource-1} inited
+21:35:04.920 [restartedMain] INFO  o.a.c.c.StandardService - [log,168] - Stopping service [Tomcat]
+21:35:04.935 [Druid-ConnectionPool-Create-72224077] INFO  c.a.d.p.DruidAbstractDataSource - [setFailContinuous,1908] - {dataSource-1} failContinuous is true
+21:40:22.715 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,18] - HV000001: Hibernate Validator 9.0.1.Final
+21:40:22.736 [restartedMain] INFO  c.r.RuoYiApplication - [logStarting,54] - Starting RuoYiApplication using Java 21.0.10 with PID 14293 (/Users/wangdante/D/kugou/work/RuoYi-Vue/ruoyi-admin/target/classes started by wangdante in /Users/wangdante/D/kugou/work/RuoYi-Vue)
+21:40:22.737 [restartedMain] INFO  c.r.RuoYiApplication - [logStartupProfileInfo,658] - The following 1 profile is active: "druid"
+21:40:23.981 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Initializing ProtocolHandler ["http-nio-8080"]
+21:40:23.982 [restartedMain] INFO  o.a.c.c.StandardService - [log,168] - Starting service [Tomcat]
+21:40:23.982 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,168] - Starting Servlet engine: [Apache Tomcat/11.0.18]
+21:40:24.789 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,865] - {dataSource-1} inited
+21:40:25.549 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2083] - {dataSource-1} closing ...
+21:40:25.553 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,2156] - {dataSource-1} closed
+21:40:25.560 [restartedMain] INFO  o.a.c.c.StandardService - [log,168] - Stopping service [Tomcat]
+21:47:03.595 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,18] - HV000001: Hibernate Validator 9.0.1.Final
+21:47:03.623 [restartedMain] INFO  c.r.RuoYiApplication - [logStarting,54] - Starting RuoYiApplication using Java 21.0.10 with PID 14563 (/Users/wangdante/D/kugou/work/RuoYi-Vue/ruoyi-admin/target/classes started by wangdante in /Users/wangdante/D/kugou/work/RuoYi-Vue)
+21:47:03.623 [restartedMain] INFO  c.r.RuoYiApplication - [logStartupProfileInfo,658] - The following 1 profile is active: "druid"
+21:47:04.885 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Initializing ProtocolHandler ["http-nio-8080"]
+21:47:04.886 [restartedMain] INFO  o.a.c.c.StandardService - [log,168] - Starting service [Tomcat]
+21:47:04.886 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,168] - Starting Servlet engine: [Apache Tomcat/11.0.18]
+21:47:05.672 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,865] - {dataSource-1} inited
+21:47:07.007 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,62] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+21:47:07.008 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,224] - Quartz Scheduler v2.5.2 created.
+21:47:07.008 [restartedMain] INFO  o.q.s.RAMJobStore - [initialize,152] - RAMJobStore initialized.
+21:47:07.008 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,289] - Scheduler meta-data: Quartz Scheduler (v2.5.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+21:47:07.008 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2250] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6c1a25a5
+21:47:07.750 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,168] - Starting ProtocolHandler ["http-nio-8080"]
+21:47:07.764 [restartedMain] INFO  o.q.c.QuartzScheduler - [start,541] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+21:47:07.769 [restartedMain] INFO  c.r.RuoYiApplication - [logStarted,60] - Started RuoYiApplication in 4.389 seconds (process running for 4.817)
+22:02:05.070 [SpringApplicationShutdownHook] INFO  o.q.c.QuartzScheduler - [standby,576] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+22:02:05.114 [SpringApplicationShutdownHook] INFO  o.q.c.QuartzScheduler - [shutdown,656] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+22:02:05.114 [SpringApplicationShutdownHook] INFO  o.q.c.QuartzScheduler - [standby,576] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+22:02:05.114 [SpringApplicationShutdownHook] INFO  o.q.c.QuartzScheduler - [shutdown,728] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+22:02:05.114 [SpringApplicationShutdownHook] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+22:02:05.127 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2083] - {dataSource-1} closing ...
+22:02:05.137 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2156] - {dataSource-1} closed
