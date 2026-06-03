@@ -64,3 +64,7 @@
 22:02:05.114 [SpringApplicationShutdownHook] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
 22:02:05.127 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2083] - {dataSource-1} closing ...
 22:02:05.137 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2156] - {dataSource-1} closed
+18:40:47.101 [restartedMain] INFO  c.r.RuoYiApplication - [logStarting,54] - Starting RuoYiApplication using Java 21.0.10 with PID 32961 (/Users/wangdante/D/kugou/work/work_RouYi-Vue/ruoyi-admin/target/classes started by wangdante in /Users/wangdante/D/kugou/work/work_RouYi-Vue)
+18:40:47.101 [restartedMain] INFO  c.r.RuoYiApplication - [logStartupProfileInfo,658] - The following 1 profile is active: "druid"
+18:41:22.401 [restartedMain] INFO  c.r.RuoYiApplication - [logStarting,54] - Starting RuoYiApplication using Java 21.0.10 with PID 32961 (/Users/wangdante/D/kugou/work/work_RouYi-Vue/ruoyi-admin/target/classes started by wangdante in /Users/wangdante/D/kugou/work/work_RouYi-Vue)
+18:41:22.402 [restartedMain] INFO  c.r.RuoYiApplication - [logStartupProfileInfo,658] - The following 1 profile is active: "druid"
