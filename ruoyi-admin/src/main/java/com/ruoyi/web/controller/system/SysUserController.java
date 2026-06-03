@@ -2,6 +2,8 @@ package com.ruoyi.web.controller.system;
 
 import java.util.List;
 import java.util.stream.Collectors;
+
+import com.ruoyi.common.core.domain.model.LoginUser;
 import jakarta.servlet.http.HttpServletResponse;
 import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -252,5 +254,24 @@ public class SysUserController extends BaseController
     public AjaxResult deptTree(SysDept dept)
     {
         return success(deptService.selectDeptTreeList(dept));
+    }
+
+    @PreAuthorize("@ss.hasPermi('system:user:profile:summary')")
+    @GetMapping("/profile/summary")
+    public AjaxResult profileSummary()
+    {
+        //返回数据
+        AjaxResult ajax = AjaxResult.success();
+        LoginUser loginUser = SecurityUtils.getLoginUser();
+        ajax.put("userId",loginUser.getUserId());
+        ajax.put("userName",loginUser.getUsername());
+        ajax.put("nickName",loginUser.getUser().getNickName());
+        String deptName=loginUser.getUser().getDept().getDeptName() ==null
+                ?null
+                :loginUser.getUser().getDept().getDeptName();
+        ajax.put("deptName",deptName);
+        ajax.put("loginIp",loginUser.getUser().getLoginIp());
+        ajax.put("loginDate",loginUser.getUser().getLoginDate());
+        return ajax;
     }
 }
