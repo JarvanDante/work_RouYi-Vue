@@ -1,8 +1,3 @@
-/logs
-/logs/*
-
-/ruoyi-admin/logs
-/ruoyi-admin/target
-
-/ruoyi-common/logs
-/ruoyi-common/target
+target/
+logs/
+*.log
