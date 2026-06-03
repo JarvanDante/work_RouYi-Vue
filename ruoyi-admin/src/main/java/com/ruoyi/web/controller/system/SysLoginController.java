@@ -78,6 +78,8 @@ public class SysLoginController
     {
         LoginUser loginUser = SecurityUtils.getLoginUser();
         SysUser user = loginUser.getUser();
+        //是否是管理员
+        Boolean isAdmin=user.isAdmin();
         // 角色集合
         Set<String> roles = permissionService.getRolePermission(user);
         // 权限集合
@@ -88,6 +90,7 @@ public class SysLoginController
             tokenService.refreshToken(loginUser);
         }
         AjaxResult ajax = AjaxResult.success();
+        ajax.put("isAdmin", isAdmin);
         ajax.put("user", user);
         ajax.put("roles", roles);
         ajax.put("permissions", permissions);
