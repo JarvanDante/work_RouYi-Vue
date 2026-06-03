@@ -120,6 +120,7 @@ pagehelper:
 springdoc:
   api-docs:
     path: /v3/api-docs
+    enabled: false
   swagger-ui:
     enabled: true
     path: /swagger-ui.html

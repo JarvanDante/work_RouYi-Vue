@@ -101,6 +101,15 @@ public class Constants
     public static final String TOKEN = "token";
 
     /**
+     * 登录时间
+     */
+    public static final String LoginTime = "loginTime";
+    /**
+     * 验证码开关
+     */
+    public static final String CaptchaEnabled = "captchaEnabled";
+
+    /**
      * 令牌前缀
      */
     public static final String TOKEN_PREFIX = "Bearer ";

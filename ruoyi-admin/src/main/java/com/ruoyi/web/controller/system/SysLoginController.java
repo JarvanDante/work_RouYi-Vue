@@ -61,6 +61,10 @@ public class SysLoginController
         String token = loginService.login(loginBody.getUsername(), loginBody.getPassword(), loginBody.getCode(),
                 loginBody.getUuid());
         ajax.put(Constants.TOKEN, token);
+        ajax.put(Constants.LoginTime, DateUtils.getTime());
+        boolean captchaEnabled = configService.selectCaptchaEnabled();
+
+        ajax.put(Constants.CaptchaEnabled, captchaEnabled);
         return ajax;
     }
 
