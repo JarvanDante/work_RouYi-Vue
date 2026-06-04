@@ -3,6 +3,7 @@ package com.ruoyi.framework.web.service;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -282,7 +283,7 @@ public class TokenService
 
         for (String key : keys) {
             LoginUser eachLoginUser = redisCache.getCacheObject(key);
-            if (eachLoginUser != null && loginUser.getUserId() == eachLoginUser.getUserId()) {
+            if (eachLoginUser != null && Objects.equals(loginUser.getUserId(), eachLoginUser.getUserId())) {
                 redisCache.deleteObject(key);
             }
         }
