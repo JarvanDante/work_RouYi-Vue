@@ -95,6 +95,8 @@ public class SysLoginService
         AsyncManager.me().execute(AsyncFactory.recordLogininfor(username, Constants.LOGIN_SUCCESS, MessageUtils.message("user.login.success")));
         LoginUser loginUser = (LoginUser) authentication.getPrincipal();
         recordLoginInfo(loginUser.getUserId());
+        // 多端登录校验:false-同一用户，旧 token 失效
+        deviceLogin(loginUser);
         // 生成token
         return tokenService.createToken(loginUser);
     }
@@ -125,6 +127,19 @@ public class SysLoginService
                 AsyncManager.me().execute(AsyncFactory.recordLogininfor(username, Constants.LOGIN_FAIL, MessageUtils.message("user.jcaptcha.error")));
                 throw new CaptchaException();
             }
+        }
+    }
+
+    /**
+     * 校验多端登录:false-同一用户，旧 token 失效
+     *
+     * @param loginUser 用户信息
+     */
+    public void deviceLogin(LoginUser loginUser) {
+        boolean deviceEnabled = configService.selectDeviceEnabled();
+        if (!deviceEnabled) {
+            // 多端登录校验:false-同一用户，旧 token 失效
+            tokenService.delSameLoginUser(loginUser);
         }
     }
 

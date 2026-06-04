@@ -94,6 +94,20 @@ public class SysConfigServiceImpl implements ISysConfigService
     }
 
     /**
+     * 允许多设备登录开关
+     *
+     * @return true开启，false关闭
+     */
+    @Override
+    public boolean selectDeviceEnabled() {
+        String deviceEnabled = selectConfigByKey("sys.login.multiDevice");
+        if (StringUtils.isEmpty(deviceEnabled)) {
+            return true;
+        }
+        return Convert.toBool(deviceEnabled);
+    }
+
+    /**
      * 查询参数配置列表
      * 
      * @param config 参数配置信息

@@ -267,4 +267,24 @@ public class TokenService
             log.info("角色[{}]权限变更，已刷新在线用户[{}]的权限缓存", roleId, loginUser.getUsername());
         }
     }
+
+    /**
+     * 删除相同用户登录的token
+     * @param loginUser 用户信息
+     */
+    public void delSameLoginUser(LoginUser loginUser) {
+        // 扫描所有在线 loginUser的token
+        String pattern = CacheConstants.LOGIN_TOKEN_KEY + "*";
+        Collection<String> keys = redisCache.keys(pattern);
+        if (keys == null || keys.isEmpty()) {
+            return;
+        }
+
+        for (String key : keys) {
+            LoginUser eachLoginUser = redisCache.getCacheObject(key);
+            if (eachLoginUser != null && loginUser.getUserId() == eachLoginUser.getUserId()) {
+                redisCache.deleteObject(key);
+            }
+        }
+    }
 }
