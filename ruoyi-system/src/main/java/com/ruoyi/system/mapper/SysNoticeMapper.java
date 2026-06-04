@@ -2,6 +2,7 @@ package com.ruoyi.system.mapper;
 
 import java.util.List;
 import com.ruoyi.system.domain.SysNotice;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * 通知公告表 数据层
@@ -25,6 +26,15 @@ public interface SysNoticeMapper
      * @return 公告集合
      */
     public List<SysNotice> selectNoticeList(SysNotice notice);
+
+    /**
+     * 置顶公告
+     *
+     * @param noticeId 公告id
+     * @param isTop 是否置顶
+     * @return
+     */
+    public int updateNoticeTop(@Param("noticeId") Long noticeId,@Param("isTop") Boolean isTop);
 
     /**
      * 新增公告

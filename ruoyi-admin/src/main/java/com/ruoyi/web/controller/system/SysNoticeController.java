@@ -110,6 +110,14 @@ public class SysNoticeController extends BaseController
         return success();
     }
 
+    @PostMapping("/changeTop")
+    @ResponseBody
+    public AjaxResult changeTop(Long noticeId,Boolean isTop){
+
+        noticeService.changeTop(noticeId,isTop);
+        return success();
+    }
+
     /**
      * 批量标记已读
      */

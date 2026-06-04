@@ -43,6 +43,20 @@ public class SysNoticeServiceImpl implements ISysNoticeService
     }
 
     /**
+     * 置顶公告
+     *
+     * @param noticeId 公告ID
+     * @param isTop    是否置顶
+     * @return
+     */
+    @Override
+    public Boolean changeTop(Long noticeId, Boolean isTop) {
+
+        noticeMapper.updateNoticeTop(noticeId, isTop);
+        return true;
+    }
+
+    /**
      * 新增公告
      * 
      * @param notice 公告信息

@@ -35,6 +35,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
             n.notice_title as noticeTitle,
             n.notice_type  as noticeType,
             n.status,
+            n.is_top  as isTop,
             n.create_by    as createBy,
             n.create_time  as createTime,
             case when r.notice_id is not null then true else false end as isRead
@@ -42,7 +43,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         left join sys_notice_read r
             on r.notice_id = n.notice_id and r.user_id = #{userId}
         where n.status = '0'
-        order by n.notice_id desc
+        order by is_top desc, top_time desc, create_time desc
         limit #{limit}
     </select>
 

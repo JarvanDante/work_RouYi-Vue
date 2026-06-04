@@ -27,6 +27,15 @@ public interface ISysNoticeService
     public List<SysNotice> selectNoticeList(SysNotice notice);
 
     /**
+     * 公告置顶 0否1是
+     *
+     * @param noticeId 公告ID
+     * @param isTop    是否置顶
+     * @return
+     */
+    public Boolean changeTop(Long noticeId, Boolean isTop);
+
+    /**
      * 新增公告
      * 
      * @param notice 公告信息
